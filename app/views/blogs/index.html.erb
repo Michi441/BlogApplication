@@ -1,15 +1,23 @@
 
 
-
-
-
 <div class="container">
-  <div class="row">
+
+<div class="row">
+
+
+
+
+
+
+
+
+
 
 
 <% @Blogs.each do |b| %>
-  <div class="col-md-4">
-  <div class="card" style="width: 18rem; margin-top: 20px;">
+<div class="col-md-4" id="card_margin">
+  <div class="card" style="width: 18rem">
+
     <div class="card-body">
       <h5 class="card-title">
         <%= b.title %>
@@ -17,22 +25,24 @@
       <p class="card-text">
         <%= b.content %>
       </p>
-
-        <%= link_to "View", blog_path(b), class: 'btn btn-outline-primary' %>
-        <%= link_to "Edit", edit_blog_path(b), class: 'btn btn-outline-dark' %>
-        <%= link_to "Delete", blog_path(b), class: 'btn btn-outline-danger', method: :delete, data: { confirm: 'Are you sure?'} %>
+      <%= link_to "View", blog_path(b), class: 'btn btn-outline-primary' %>
+      <%= link_to "Edit", edit_blog_path(b), class: 'btn btn-outline-primary' %>
+      <%= link_to "Delete", blog_path(b), class: 'btn btn-outline-danger', method: :delete, data: { confirm: 'Are you sure?'} %>
     </div>
   </div>
 
 
 
-</div>
 
+
+
+
+
+
+</div>
 <% end %>
 
 
 
-
-
-
+</div>
 </div>

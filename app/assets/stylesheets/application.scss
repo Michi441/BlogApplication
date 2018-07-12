@@ -15,19 +15,25 @@
  */
  @import "bootstrap";
 
+#card_margin{
 
- #show_page{
-   margin-top: 30px;
- }
+  margin-top: 30px;
+}
 
- #show_page_button{
-   margin-top: 50px;
- }
+#show_page{
+  margin-top: 30px;
+}
 
- .about{
+#show_button{
+  margin-top: 30px;
+}
 
-   text-align: center;
-   color: #bfbfbf;
-   margin-top: 150px;
+#form_container{
+  margin-top: 30px;
+}
 
- }
+.about_page{
+
+  margin-top: 150px;
+  color: #cccccc;
+}
